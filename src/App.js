@@ -51,6 +51,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>{process.env.REACT_APP_BASE}</h1>
       <form onSubmit={onSubmit}>
         <input type="text" name="name" value={values.name.value} placeholder="name" onChange={onChange}/>
         <input type="text" name="username" value={values.username.value} placeholder="username" onChange={onChange}/>
